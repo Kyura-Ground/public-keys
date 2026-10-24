@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+# Newly generated signing material must stay local. Existing tracked keys remain.
+*.pk8
+*.x509.pem
+*.pem
+*.avbpubkey
+avb_custom_key.bin
