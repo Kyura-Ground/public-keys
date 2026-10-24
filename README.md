@@ -1,34 +1,61 @@
-# LineageOS signing keys
+# Android 17 signing keys — LineageOS 24.0
 
-Use at `vendor/lineage-priv/keys` and inherit `keys.mk` from the product.
-The existing certificates are RSA 2048/SHA-256 pairs created in March 2025,
-valid until July 2052. Their age does not require replacing them for Android 15.
-The standard Android 15 certificate names are present.
+Based on the official [LineageOS lineage-priv-template](https://github.com/LineageOS/scripts/tree/main/lineage-priv-template),
+revision `01a110e3a59bbaa7aacdce5c733944f7d9f08f33`.
 
-This public repository contains private `.pk8` files. Its keys are shared/test
-keys, not a secret release-signing identity. For private releases, keep a separate
-key set outside public source control. Switching keys on an installed ROM needs
-a planned signing migration; the validation tool never rotates keys.
+This branch contains a new shared signing identity for Android 17 and Android 15: standard Android
+certificates, 78 certificate overrides, an AVB public key, and generated
+`Android.bp` certificate modules. `main` retains the existing Android 15 keys.
+The default application/OTA certificate follows the template's `testkey` name;
+it is a newly generated key, not the AOSP public test key.
 
-`keys.mk` preserves the existing `releasekey` as the default application and OTA
-signer for `user`/`userdebug`. OTA metadata lists `releasekey` first, and the
-existing `otakey` is added to both system and recovery trust stores. `eng` keeps
-the platform defaults.
+All 89 matching `.pk8` files are intentionally published alongside their
+certificates. This is a shared/test signing identity: anyone with repository
+access can sign with these keys. `certificates.json` records the public
+certificate fingerprints and validity dates.
 
-Validate every certificate/private-key pair and all required Android 15 names:
+## Use in an Android checkout
+
+Clone this branch at the path expected by the template:
 
 ```bash
-python3 vendor/lineage-priv/keys/validate_keys.py
+git clone -b lineage-24.0 https://github.com/Kyura-Ground/public-keys.git vendor/lineage-priv/keys
 ```
 
-The validator checks matching public keys and certificate validity dates. It
-does not generate or replace files and never prints private key material.
-`--json` outputs certificate fingerprints and dates for audits.
+The checkout already includes the matching signing files; no restore or key
+generation step is required. The X00TD LineageOS 22.2 local manifest also selects
+this keys branch. Key material is compatible with Android 15; unused certificate
+overrides do not select additional ROM modules.
 
-This is inline build signing. Module-specific APEX payload keys and presigned
-vendor APKs remain governed by their platform definitions; this configuration
-does not claim to re-sign every component with private release keys.
+Inherit the configuration from the product:
 
-References: [AOSP release signing](https://source.android.com/docs/core/ota/sign_builds),
-[Android 15 Make signing](https://github.com/LineageOS/android_build/blob/lineage-22.2/core/config.mk),
-[Soong signing configuration](https://github.com/LineageOS/android_build_soong/blob/lineage-22.2/android/config.go).
+```make
+$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
+```
+
+The committed `Android.bp` is already generated. In a complete Android source
+checkout, `./keys.sh` can regenerate its metadata and fill missing key pairs;
+existing complete pairs are preserved. A certificate without its matching
+private file causes an error rather than generating a different identity.
+
+`make_key.sh` uses OpenSSL directly and supports `KEY_SUBJECT` for a different
+certificate subject. Standard platform keys use RSA 2048; certificate overrides,
+AVB and `releasekey` use RSA 4096. Certificates use SHA-256 and 10,000-day validity.
+No key-validation step is added to a ROM build script.
+
+The optional upstream `check_keys.py` checks produced APK/APEX container
+certificates and needs `requirements.txt` plus the Android apksigner tool. It is
+not run automatically. Module-specific APEX payload signing remains governed
+by the ROM's APEX key definitions.
+
+This new identity differs from `main`; updates from ROMs signed with the older
+keys require a signing migration or a clean installation.
+
+## Changes from the upstream template
+
+- The bundled example release key is replaced by a new locally generated pair.
+- All matching key pairs are published as shared/test signing material by request.
+- Generation stops on errors and preserves complete existing key pairs.
+- An incomplete pair is rejected instead of being overwritten.
+- `make_key.sh` uses noninteractive OpenSSL and removes temporary private files.
+- OTA certificate metadata points to the same key used for package signing.

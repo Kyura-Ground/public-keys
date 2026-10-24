@@ -1,0 +1,630 @@
+{
+  "android_version": 17,
+  "lineage_branch": "lineage-24.0",
+  "template_commit": "01a110e3a59bbaa7aacdce5c733944f7d9f08f33",
+  "certificate_pairs": [
+    {
+      "name": "bluetooth",
+      "rsa_bits": 2048,
+      "certificate_sha256": "a3c1c53abcc91cf823a1f63318301d60e00315157aebbb96652a8ca007a9f72a",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "cts_uicc_2021",
+      "rsa_bits": 2048,
+      "certificate_sha256": "f978dcff7e1ce0a254eb1a205588a6a121b6df25db596947c9523e064ea80d44",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "media",
+      "rsa_bits": 2048,
+      "certificate_sha256": "31ace8d41c32b6599e81eeca9dff84ec29c8ef93a82d7ef9c3c22afab1ebf1bd",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "networkstack",
+      "rsa_bits": 2048,
+      "certificate_sha256": "86832c582079875c7167a8b3a15302369916017e4edbf526b183ae7f382f030b",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "nfc",
+      "rsa_bits": 2048,
+      "certificate_sha256": "f168353a2d44b2aa6f9ac737e6da61d9732167e76126484aa04dcd3b04da7ffe",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "platform",
+      "rsa_bits": 2048,
+      "certificate_sha256": "24fdad8440d0a97f8056b614b28af2ce649300c9d99c463ec5d774746c558708",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "sdk_sandbox",
+      "rsa_bits": 2048,
+      "certificate_sha256": "5daebe2306aabf0f8cd7f528e4cbf1752dd2c93b9369a42c085bca4429893391",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "shared",
+      "rsa_bits": 2048,
+      "certificate_sha256": "8997455daac76b3d773b5751ec7440e73248ba3f3674ef09c0207d97b8cdb0a7",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "testkey",
+      "rsa_bits": 2048,
+      "certificate_sha256": "65d8684a1135efecf522fadb757f7101f7821805a34c8e848733347d6a9b1d65",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "avb",
+      "rsa_bits": 4096,
+      "certificate_sha256": "643bff9109541af9df7d63e2794334660ccc2ac4086b85ef8db1357920b74a26",
+      "not_before": "Oct 24 08:51:09 2026 GMT",
+      "not_after": "Mar 11 08:51:09 2054 GMT"
+    },
+    {
+      "name": "releasekey",
+      "rsa_bits": 4096,
+      "certificate_sha256": "70064de0937ceac9b45cceac393ee4e6a67b17e1b10b533735876a22fc007cf5",
+      "not_before": "Oct 24 08:51:08 2026 GMT",
+      "not_after": "Mar 11 08:51:08 2054 GMT"
+    },
+    {
+      "name": "com.android.adbd.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "7da73f4e621b9d8f11f7cfe2a0a19a4a3fc606e850cbfc8996377e91319b7dbf",
+      "not_before": "Oct 24 08:51:09 2026 GMT",
+      "not_after": "Mar 11 08:51:09 2054 GMT"
+    },
+    {
+      "name": "com.android.adservices.api.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "c40ae41ded80401d130fa371b6ff3223303d497dd230ab5735233e62b5dfd320",
+      "not_before": "Oct 24 08:51:09 2026 GMT",
+      "not_after": "Mar 11 08:51:09 2054 GMT"
+    },
+    {
+      "name": "com.android.adservices.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "97404fcda1698e153a0d67096da0f6cae0726870d4d1e3f89d75eba526e7b5de",
+      "not_before": "Oct 24 08:51:09 2026 GMT",
+      "not_after": "Mar 11 08:51:09 2054 GMT"
+    },
+    {
+      "name": "com.android.appsearch.apk.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "5abf446d52e8ecadc9ab146f326d5bcd2d86047c288bcc7702d16ee414c6e28f",
+      "not_before": "Oct 24 08:51:09 2026 GMT",
+      "not_after": "Mar 11 08:51:09 2054 GMT"
+    },
+    {
+      "name": "com.android.appsearch.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "bd97a80d7fc150b9a01b6fea7af7a1004277edeb334c18f7fdaf2e36a5b56bbe",
+      "not_before": "Oct 24 08:51:10 2026 GMT",
+      "not_after": "Mar 11 08:51:10 2054 GMT"
+    },
+    {
+      "name": "com.android.art.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "11bdd5eadb0251ccd16223b1b00d69da451d39dde4469d6df460413d3d143f2c",
+      "not_before": "Oct 24 08:51:12 2026 GMT",
+      "not_after": "Mar 11 08:51:12 2054 GMT"
+    },
+    {
+      "name": "com.android.bluetooth.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "ec298333ff3d4c40c3764c62597be3e2bc3237dc5af16e0515a57653da57c365",
+      "not_before": "Oct 24 08:51:11 2026 GMT",
+      "not_after": "Mar 11 08:51:11 2054 GMT"
+    },
+    {
+      "name": "com.android.bt.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "d8e50f852be66990e228f684e0b8630bbbfbbeef08adadea2c9765048d4d5cd2",
+      "not_before": "Oct 24 08:51:10 2026 GMT",
+      "not_after": "Mar 11 08:51:10 2054 GMT"
+    },
+    {
+      "name": "com.android.btservices.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "ec8c90f856de7a7f7a361e875f4bfcb0d14c4b4044197995a7f1858966d4907a",
+      "not_before": "Oct 24 08:51:13 2026 GMT",
+      "not_after": "Mar 11 08:51:13 2054 GMT"
+    },
+    {
+      "name": "com.android.cellbroadcast.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "1aa1efdbbf76b428b67a441fba147fa05d5d6f1feafb8929c6a75333f05a4f02",
+      "not_before": "Oct 24 08:51:11 2026 GMT",
+      "not_after": "Mar 11 08:51:11 2054 GMT"
+    },
+    {
+      "name": "com.android.compos.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "4e99c97e10af96d066044145d368fdc0ed83f98b9c45b44ece632061b5ca4411",
+      "not_before": "Oct 24 08:51:12 2026 GMT",
+      "not_after": "Mar 11 08:51:12 2054 GMT"
+    },
+    {
+      "name": "com.android.configinfrastructure.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "6102fe656e67da9bd7625d8dffc7badee2674a5525ab34e24fe6dad3b30697da",
+      "not_before": "Oct 24 08:51:12 2026 GMT",
+      "not_after": "Mar 11 08:51:12 2054 GMT"
+    },
+    {
+      "name": "com.android.connectivity.resources.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "2a0ba2300b428273e7df5d09e078c4a52a70b2f642045465e171c4753d43ff41",
+      "not_before": "Oct 24 08:51:13 2026 GMT",
+      "not_after": "Mar 11 08:51:13 2054 GMT"
+    },
+    {
+      "name": "com.android.conscrypt.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "2570f23c768713759146c2af73f1ce8b7571b9f323ec8108bcde3fad1178db7f",
+      "not_before": "Oct 24 08:51:14 2026 GMT",
+      "not_after": "Mar 11 08:51:14 2054 GMT"
+    },
+    {
+      "name": "com.android.crashrecovery.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "a198988c17dbef6d36cfd5881dc6625d02bfb15b73242ad6be9ec836aea59a4c",
+      "not_before": "Oct 24 08:51:13 2026 GMT",
+      "not_after": "Mar 11 08:51:13 2054 GMT"
+    },
+    {
+      "name": "com.android.devicelock.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "913ddccdeed38c0c851d1e618601f64ad214e5e962e90621fb4a5e572a51da98",
+      "not_before": "Oct 24 08:51:14 2026 GMT",
+      "not_after": "Mar 11 08:51:14 2054 GMT"
+    },
+    {
+      "name": "com.android.extservices.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "571209134a4a1902353c7f4a7c70b34beb0821b5e108d3ef4cc0d31e153b16b0",
+      "not_before": "Oct 24 08:51:14 2026 GMT",
+      "not_after": "Mar 11 08:51:14 2054 GMT"
+    },
+    {
+      "name": "com.android.federatedcompute.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "df1c777873230a120e726e747579b23f044a03eba7b44f0ace81fc0cd1341d63",
+      "not_before": "Oct 24 08:51:14 2026 GMT",
+      "not_after": "Mar 11 08:51:14 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.authsecret.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "dbfc491e366d0a5ed44171d22e944be1e6780ebb78932a2e5f29b35d6a3d8b15",
+      "not_before": "Oct 24 08:51:15 2026 GMT",
+      "not_after": "Mar 11 08:51:15 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.biometrics.face.virtual.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "69ca823b9e8a326388e2c278124209f9015c73f41e68e97623ba026e7f31725c",
+      "not_before": "Oct 24 08:51:15 2026 GMT",
+      "not_after": "Mar 11 08:51:15 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.biometrics.fingerprint.virtual.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "de9d91b88a4179713d47b6e865b01524b04c2066d37d1f915769442ee11a2bf2",
+      "not_before": "Oct 24 08:51:15 2026 GMT",
+      "not_after": "Mar 11 08:51:15 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.boot.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "6a74d98eebbce6c6789940046bb97ebf777b05f0e35cf508a1d7b4dfdd503fbc",
+      "not_before": "Oct 24 08:51:14 2026 GMT",
+      "not_after": "Mar 11 08:51:14 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.cas.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "02413bd25ab964703be8d982202248381bed1b29fbe8b56b3a2b69acfd1059b4",
+      "not_before": "Oct 24 08:51:17 2026 GMT",
+      "not_after": "Mar 11 08:51:17 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.contexthub.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "f0ad6ca10b24ddc0f755157394047963fba5172fba04e1c44fe07836793191cd",
+      "not_before": "Oct 24 08:51:16 2026 GMT",
+      "not_after": "Mar 11 08:51:16 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.drm.clearkey.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "3304479318c443a4af4f63354d2bf480a828bedd1f3bb29db18357e8dbdf9422",
+      "not_before": "Oct 24 08:51:15 2026 GMT",
+      "not_after": "Mar 11 08:51:15 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.dumpstate.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "de9bb0a203d51f7270cd0b07a299ceade3e18fc28c45b8dd3a909d9b1f85055f",
+      "not_before": "Oct 24 08:51:17 2026 GMT",
+      "not_after": "Mar 11 08:51:17 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.gatekeeper.nonsecure.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "d794d28588131570f3a40a7d9ac9d791bd513c3519ac08f4f82e7e4a687c6638",
+      "not_before": "Oct 24 08:51:17 2026 GMT",
+      "not_after": "Mar 11 08:51:17 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.neuralnetworks.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "6ec59b0938aed81d1bc082085d43e234b659fb159ddaee854c43d07b70ea6fe2",
+      "not_before": "Oct 24 08:51:18 2026 GMT",
+      "not_after": "Mar 11 08:51:18 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.power.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "81ad7e30d529f94a4f1e14960db1ebab4f7089470b28e3f6244a4d6f199c1a81",
+      "not_before": "Oct 24 08:51:19 2026 GMT",
+      "not_after": "Mar 11 08:51:19 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.rebootescrow.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "b20cc86df470a4aaa6107924962f868424be20115b06a1b85fee0615f3caf227",
+      "not_before": "Oct 24 08:51:18 2026 GMT",
+      "not_after": "Mar 11 08:51:18 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.thermal.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "e0c6cd28b3ba639b9f2127aa556ecde5e805732664b2e0c8d16e4deeab7a1a91",
+      "not_before": "Oct 24 08:51:18 2026 GMT",
+      "not_after": "Mar 11 08:51:18 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.threadnetwork.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "d24a899322685b8c4dbbe2a860dc29cce043e51c39ce2c8e59036a04b1923193",
+      "not_before": "Oct 24 08:51:18 2026 GMT",
+      "not_after": "Mar 11 08:51:18 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.uwb.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "f960d7738e592c0506bff115f5045d447a58e532e8318092ccf2822186026f6f",
+      "not_before": "Oct 24 08:51:22 2026 GMT",
+      "not_after": "Mar 11 08:51:22 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.vibrator.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "fdecccb19c197cb47a914f0e0b62f0bfbf9f8cc6c53de68f106d0fc6de876954",
+      "not_before": "Oct 24 08:51:19 2026 GMT",
+      "not_after": "Mar 11 08:51:19 2054 GMT"
+    },
+    {
+      "name": "com.android.hardware.wifi.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "91495a7ea9e5ec6bc5832b19591069a00f54e88ae3eb516edcf92c7aa7787ff3",
+      "not_before": "Oct 24 08:51:19 2026 GMT",
+      "not_after": "Mar 11 08:51:19 2054 GMT"
+    },
+    {
+      "name": "com.android.health.connect.backuprestore.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "d0ce983e223fac2724b9476b8db8ec37f2a0b648614dd55331282e8715975bdf",
+      "not_before": "Oct 24 08:51:20 2026 GMT",
+      "not_after": "Mar 11 08:51:20 2054 GMT"
+    },
+    {
+      "name": "com.android.healthconnect.controller.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "64f67b9ceb912d6f5fcfc472539ca58b2204c72879690eac73a63b076f596e6f",
+      "not_before": "Oct 24 08:51:20 2026 GMT",
+      "not_after": "Mar 11 08:51:20 2054 GMT"
+    },
+    {
+      "name": "com.android.healthfitness.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "2ca5fe935bb23d03f81e9e3084dfda6dc286ef39cca0054bc0c055687e97cefe",
+      "not_before": "Oct 24 08:51:22 2026 GMT",
+      "not_after": "Mar 11 08:51:22 2054 GMT"
+    },
+    {
+      "name": "com.android.hotspot2.osulogin.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "af26a160cc467584300fec432befd6f43f0f9e385f32996919924fd92b9c6978",
+      "not_before": "Oct 24 08:51:20 2026 GMT",
+      "not_after": "Mar 11 08:51:20 2054 GMT"
+    },
+    {
+      "name": "com.android.i18n.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "647ff727e37fe6212c7082ebe2ab0cb6ff061bd8cc132979f4248c66553a292a",
+      "not_before": "Oct 24 08:51:21 2026 GMT",
+      "not_after": "Mar 11 08:51:21 2054 GMT"
+    },
+    {
+      "name": "com.android.ipsec.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "96ddb63796c82e335404d356556e16d7a610c7db2f64d5752370bec9bf892d25",
+      "not_before": "Oct 24 08:51:21 2026 GMT",
+      "not_after": "Mar 11 08:51:21 2054 GMT"
+    },
+    {
+      "name": "com.android.media.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "d75ac116da022448b8db4829389eb45df6e38976fa19108673f83aa350cd89d8",
+      "not_before": "Oct 24 08:51:24 2026 GMT",
+      "not_after": "Mar 11 08:51:24 2054 GMT"
+    },
+    {
+      "name": "com.android.media.swcodec.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "8890b08b466693037ce491e2a66326b8cff8d770f9264e8f49de20a8f1baca13",
+      "not_before": "Oct 24 08:51:22 2026 GMT",
+      "not_after": "Mar 11 08:51:22 2054 GMT"
+    },
+    {
+      "name": "com.android.mediaprovider.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "3015cc7d0985ae274e49f9f28e6627607c5120cf9eed0a3d209db4908fb4dd77",
+      "not_before": "Oct 24 08:51:23 2026 GMT",
+      "not_after": "Mar 11 08:51:23 2054 GMT"
+    },
+    {
+      "name": "com.android.nearby.halfsheet.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "39d5723fb7b6cc3d732df1afba33cd6794db0f6d2e107877706a9e097c5c5cbc",
+      "not_before": "Oct 24 08:51:22 2026 GMT",
+      "not_after": "Mar 11 08:51:22 2054 GMT"
+    },
+    {
+      "name": "com.android.networkstack.tethering.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "5782f866e585579b1aa4434e16de37a4668549c2fda31ba27eae7f68e451ab20",
+      "not_before": "Oct 24 08:51:23 2026 GMT",
+      "not_after": "Mar 11 08:51:23 2054 GMT"
+    },
+    {
+      "name": "com.android.neuralnetworks.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "f802a7b1c15d994b006a4ab4caf8b76cbd262d19b1b28f80c9e1ef67e6f8e510",
+      "not_before": "Oct 24 08:51:23 2026 GMT",
+      "not_after": "Mar 11 08:51:23 2054 GMT"
+    },
+    {
+      "name": "com.android.nfcservices.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "96699ce84319faea69c5919a7a6df185993c6774b766f9b64ad5a1f0e4276ddc",
+      "not_before": "Oct 24 08:51:24 2026 GMT",
+      "not_after": "Mar 11 08:51:24 2054 GMT"
+    },
+    {
+      "name": "com.android.npumanager.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "8c585e1a14640c0368aab9bbbd3fcd9f51f548284afe0ec5e55c1c99d504d7d4",
+      "not_before": "Oct 24 08:51:23 2026 GMT",
+      "not_after": "Mar 11 08:51:23 2054 GMT"
+    },
+    {
+      "name": "com.android.ondevicepersonalization.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "3e27f7ba09003bafb55b9a188c2497e0915683d049d40d39c0aabc5d2bdb6040",
+      "not_before": "Oct 24 08:51:24 2026 GMT",
+      "not_after": "Mar 11 08:51:24 2054 GMT"
+    },
+    {
+      "name": "com.android.os.statsd.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "bd6eb1505e8ca4605c1a229ceb3836c9453f1bf429ca8ae9dc3ffc7fd35c6403",
+      "not_before": "Oct 24 08:51:25 2026 GMT",
+      "not_after": "Mar 11 08:51:25 2054 GMT"
+    },
+    {
+      "name": "com.android.permission.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "452f692ac47059da8819acaef3399f1db2268d3631bbc028af43b964315a4eb7",
+      "not_before": "Oct 24 08:51:25 2026 GMT",
+      "not_after": "Mar 11 08:51:25 2054 GMT"
+    },
+    {
+      "name": "com.android.profiling.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "cbe9e8df38b87a15517c94a64c55906867e937ba4945d975ffb61b2346140e45",
+      "not_before": "Oct 24 08:51:26 2026 GMT",
+      "not_after": "Mar 11 08:51:26 2054 GMT"
+    },
+    {
+      "name": "com.android.resolv.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "c27302bab0f1efb563d831e9411ab537cba58f69fd5cf3f5fcc030aad1b9a00c",
+      "not_before": "Oct 24 08:51:26 2026 GMT",
+      "not_after": "Mar 11 08:51:26 2054 GMT"
+    },
+    {
+      "name": "com.android.rkpd.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "e742a65f8dd84fe79089787ee5dcb803faac6d2e94a408164f1f2337c296b07f",
+      "not_before": "Oct 24 08:51:27 2026 GMT",
+      "not_after": "Mar 11 08:51:27 2054 GMT"
+    },
+    {
+      "name": "com.android.runtime.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "c7457bc91cabd335c493a724ca17109c75989523708b4069151685af7fde8d2c",
+      "not_before": "Oct 24 08:51:25 2026 GMT",
+      "not_after": "Mar 11 08:51:25 2054 GMT"
+    },
+    {
+      "name": "com.android.safetycenter.resources.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "61354654a651b6bdda8c18045f88465f1d10dbbebfc6d718ed1eab90bb7080d1",
+      "not_before": "Oct 24 08:51:27 2026 GMT",
+      "not_after": "Mar 11 08:51:27 2054 GMT"
+    },
+    {
+      "name": "com.android.scheduling.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "2d44ffbfe8dddea887fc805748293caebcebf67237a61392df3db98e592b4660",
+      "not_before": "Oct 24 08:51:28 2026 GMT",
+      "not_after": "Mar 11 08:51:28 2054 GMT"
+    },
+    {
+      "name": "com.android.sdkext.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "8751d654de8caa80aa3c6b60bee6499553c6dfaffb67cbabf794cbe8854897ef",
+      "not_before": "Oct 24 08:51:27 2026 GMT",
+      "not_after": "Mar 11 08:51:27 2054 GMT"
+    },
+    {
+      "name": "com.android.support.apexer.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "874bd53e8907f17c73062ba3c64da4f9648ad970943d00a7889a40d249af9065",
+      "not_before": "Oct 24 08:51:27 2026 GMT",
+      "not_after": "Mar 11 08:51:27 2054 GMT"
+    },
+    {
+      "name": "com.android.telecom.resources.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "251e0e05e6c5d86606da60d636d6ae2bc6cc40dd988a77abc3a13d8ef8b3b939",
+      "not_before": "Oct 24 08:51:31 2026 GMT",
+      "not_after": "Mar 11 08:51:31 2054 GMT"
+    },
+    {
+      "name": "com.android.telecomui.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "746d25af884bbaa698db3710fee5d86de85af26f06c4348f3eedb5e800c826ad",
+      "not_before": "Oct 24 08:51:29 2026 GMT",
+      "not_after": "Mar 11 08:51:29 2054 GMT"
+    },
+    {
+      "name": "com.android.telephony.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "5bd006621eed697b8a058201e38a9b702f47b3d41d8973aad55efe631e77468a",
+      "not_before": "Oct 24 08:51:29 2026 GMT",
+      "not_after": "Mar 11 08:51:29 2054 GMT"
+    },
+    {
+      "name": "com.android.telephonycore.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "1a430d3d00fd7f751f0d9d6cbeb6add36ffb3b3316db43d52029544751d8055f",
+      "not_before": "Oct 24 08:51:29 2026 GMT",
+      "not_after": "Mar 11 08:51:29 2054 GMT"
+    },
+    {
+      "name": "com.android.telephonymodules.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "33e554c6762d9c4eca678fa8ba0a985325c3ccb42a094aa4aa8a682d5c75943c",
+      "not_before": "Oct 24 08:51:29 2026 GMT",
+      "not_after": "Mar 11 08:51:29 2054 GMT"
+    },
+    {
+      "name": "com.android.tethering.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "af775bea06510e4b41030320145459c507565776c2ebaf082856b28ad56a251d",
+      "not_before": "Oct 24 08:51:30 2026 GMT",
+      "not_after": "Mar 11 08:51:30 2054 GMT"
+    },
+    {
+      "name": "com.android.tzdata.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "c436c39c93a472b0baadae3fc2cb0c11836c1abca05d25fbaa79d035929a8bdd",
+      "not_before": "Oct 24 08:51:30 2026 GMT",
+      "not_after": "Mar 11 08:51:30 2054 GMT"
+    },
+    {
+      "name": "com.android.uprobestats.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "1a44343374e6d3bcaf9ce1d1a5bf65092450a4f92a17f880a71463035433b068",
+      "not_before": "Oct 24 08:51:30 2026 GMT",
+      "not_after": "Mar 11 08:51:30 2054 GMT"
+    },
+    {
+      "name": "com.android.uwb.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "80ae6788c5067a806c2b33d607ad051ec7c57c19727216ecf9997163042a22f2",
+      "not_before": "Oct 24 08:51:30 2026 GMT",
+      "not_after": "Mar 11 08:51:30 2054 GMT"
+    },
+    {
+      "name": "com.android.uwb.resources.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "3c9fcfa5abab0320d733dd46589fa9c67fa2d2e824e883f1cbb75270e5cab0b2",
+      "not_before": "Oct 24 08:51:32 2026 GMT",
+      "not_after": "Mar 11 08:51:32 2054 GMT"
+    },
+    {
+      "name": "com.android.virt.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "1075ee5a9633695ad3ce18c71f45ed1436919b47aad164011bf8d284aed80c06",
+      "not_before": "Oct 24 08:51:31 2026 GMT",
+      "not_after": "Mar 11 08:51:31 2054 GMT"
+    },
+    {
+      "name": "com.android.vndk.current.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "131ae47e9736ae75c4678443b3794c1e5b6654ea831516967cc1a00eeef8fd99",
+      "not_before": "Oct 24 08:51:31 2026 GMT",
+      "not_after": "Mar 11 08:51:31 2054 GMT"
+    },
+    {
+      "name": "com.android.webapp.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "b0d701093b73450e51de299a9840f8057d7deae1795f2fb2e0cfcb71fc64afeb",
+      "not_before": "Oct 24 08:51:31 2026 GMT",
+      "not_after": "Mar 11 08:51:31 2054 GMT"
+    },
+    {
+      "name": "com.android.wifi.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "aaf81d1ae069356012f1fefa80f18d46db6a3db7b4dd11d688ba733b180cb686",
+      "not_before": "Oct 24 08:51:32 2026 GMT",
+      "not_after": "Mar 11 08:51:32 2054 GMT"
+    },
+    {
+      "name": "com.android.wifi.dialog.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "2ed6873c30b99b788757b2b40ceba9815de86fc88cefef6c315dc166997fbede",
+      "not_before": "Oct 24 08:51:31 2026 GMT",
+      "not_after": "Mar 11 08:51:31 2054 GMT"
+    },
+    {
+      "name": "com.android.wifi.resources.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "324c2d5aa58bbb64f906ee21b9610670c6570f2807243f83fa45f2a5eb3ebf67",
+      "not_before": "Oct 24 08:51:33 2026 GMT",
+      "not_after": "Mar 11 08:51:33 2054 GMT"
+    },
+    {
+      "name": "com.google.pixel.vibrator.hal.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "8661a60058fbdd6a5d9233246734e7af08d09b5f55d3e824ac9808c37b7194e7",
+      "not_before": "Oct 24 08:51:33 2026 GMT",
+      "not_after": "Mar 11 08:51:33 2054 GMT"
+    },
+    {
+      "name": "com.qorvo.uwb.certificate.override",
+      "rsa_bits": 4096,
+      "certificate_sha256": "cef25b2ff6f64be52363f4ff3e2fa177bee9a6c5624e2c58bf281744ce206ea4",
+      "not_before": "Oct 24 08:51:33 2026 GMT",
+      "not_after": "Mar 11 08:51:33 2054 GMT"
+    }
+  ]
+}
