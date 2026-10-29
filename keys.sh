@@ -7,7 +7,7 @@ cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
 shopt -s nullglob
 platform_keys=(../../../build/make/target/product/security/*.pk8)
 if [[ ${#platform_keys[@]} -eq 0 || ! -f ../../../external/avb/avbtool.py ]]; then
-    echo "Run from vendor/lineage-priv/keys in a complete Android source tree." >&2
+    echo "Run from vendor/<rom>-priv/keys in a complete Android source tree." >&2
     exit 1
 fi
 mapfile -t override_keys < <(grep -o ':.*override' keys.mk | sort -u)

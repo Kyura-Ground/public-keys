@@ -33,6 +33,11 @@ Inherit the configuration from the product:
 $(call inherit-product, vendor/lineage-priv/keys/keys.mk)
 ```
 
+For Evolution-X, sync this repository at `vendor/evolution-priv/keys` and inherit
+`vendor/evolution-priv/keys/keys.mk` instead. Signing paths follow the location of
+`keys.mk`; both locations use the same certificates. Use the ROM's existing
+signing configuration include; an additional device product include is not needed.
+
 The committed `Android.bp` is already generated. In a complete Android source
 checkout, `./keys.sh` can regenerate its metadata and fill missing key pairs;
 existing complete pairs are preserved. A certificate without its matching

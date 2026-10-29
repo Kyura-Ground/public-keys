@@ -1,7 +1,9 @@
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-AVB_CUSTOM_KEY_PATH := vendor/lineage-priv/keys/avb.pk8
+_signing_key_dir := $(call my-dir)
+
+AVB_CUSTOM_KEY_PATH := $(_signing_key_dir)/avb.pk8
 AVB_CUSTOM_ALGORITHM := SHA256_RSA4096
 WITH_AVB ?= false
 
@@ -95,7 +97,9 @@ PRODUCT_CERTIFICATE_OVERRIDES += \
     WebAppService:com.android.webapp.certificate.override \
     WifiDialog:com.android.wifi.dialog.certificate.override
 
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/testkey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := $(_signing_key_dir)/testkey
 PRODUCT_OTA_PUBLIC_KEYS := $(PRODUCT_DEFAULT_DEV_CERTIFICATE).x509.pem
 PRODUCT_EXTRA_RECOVERY_KEYS :=
 PRODUCT_MAINLINE_BLUETOOTH_SEPOLICY_DEV_CERTIFICATES := $(dir $(PRODUCT_DEFAULT_DEV_CERTIFICATE))
+
+_signing_key_dir :=
