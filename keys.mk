@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-_signing_key_dir := $(call my-dir)
+_signing_key_dir := $(patsubst %/,%,$(dir $(lastword $(MAKEFILE_LIST))))
 
 AVB_CUSTOM_KEY_PATH := $(_signing_key_dir)/avb.pk8
 AVB_CUSTOM_ALGORITHM := SHA256_RSA4096
